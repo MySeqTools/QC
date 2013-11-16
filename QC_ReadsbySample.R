@@ -13,7 +13,7 @@ outdir="/home/dyap/Projects/MiSeq_Data/MiSeq_QC"
 
 #Change the skip to make sure the rows are read in correctly (skipping previous section)
 counts <- read.table(file="DemultiplexSummaryF1L1.txt", stringsAsFactors=FALSE, sep="\t", skip=34)
-samples <- read.csv(file="SampleSheetUsed.csv", stringsAsFactors = FALSE, skip=32, header= TRUE)
+samples <- read.csv(file="SampleSheetUsed.csv", stringsAsFactors = FALSE, skip=29, header= TRUE)
 
 #########################################################################
 ##     DO NOT CHANGE ANYTHING BELOW THIS LINE - WSOP QC PIPELINE      ##
