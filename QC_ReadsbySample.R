@@ -1,15 +1,15 @@
 # This script QCs the no of reads that can be assigned from the given samplesheet in a run
 
 #############################
-RunID="130603_M00897_0033_000000000-A49AR"
-Alignment="Alignment"
+RunID="131112_M00897_0086_000000000-A6MK1"
+Alignment="Alignment2"
 ##############################
-Aligndir=paste(paste("/Volumes/Monco/MiSeq Run Files/MiSeq Analysis Files",RunID,sep="/"), "Data/Intensities/BaseCalls", sep="/")
+Aligndir=paste(paste("/share/lustre/archive/MiSeq/MiSeq_Analysis_Files",RunID,sep="/"), "Data/Intensities/BaseCalls", sep="/")
 dir=paste(Aligndir,Alignment,sep="/")
 setwd(dir)
 
 ##############################
-outdir="/Users/dyap/Documents/USB_STORAGE/QC"
+outdir="/home/dyap/Projects/MiSeq_Data/MiSeq_QC"
 
 #Change the skip to make sure the rows are read in correctly (skipping previous section)
 counts <- read.table(file="DemultiplexSummaryF1L1.txt", stringsAsFactors=FALSE, sep="\t", skip=34)
